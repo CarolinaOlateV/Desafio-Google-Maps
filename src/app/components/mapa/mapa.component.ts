@@ -8,14 +8,14 @@ import { Marcador } from 'src/app/classes/marcador.class';
 })
 export class MapaComponent implements OnInit {
 
-  marcadores: Marcador[] = []
+  marcadores: Marcador[] = [];
 
   lat = -33.4726900;
   lng = -70.6472400;
 
   constructor() {
 
-    const nuevoMarcador = new Marcador(-33.4726900,-70.6472400);
+    const nuevoMarcador = new Marcador(-33.4726900, -70.6472400);
 
     this.marcadores.push( nuevoMarcador );
    }
