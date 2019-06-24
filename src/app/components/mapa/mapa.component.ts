@@ -10,12 +10,12 @@ export class MapaComponent implements OnInit {
 
   marcadores: Marcador[] = [];
 
-  lat = -33.4726900;
-  lng = -70.6472400;
+  lat = 19.4978;
+  lng = -99.1269;
 
   constructor() {
 
-    const nuevoMarcador = new Marcador(-33.4726900, -70.6472400);
+    const nuevoMarcador = new Marcador(19.4978, -99.1269);
 
     this.marcadores.push( nuevoMarcador );
    }
