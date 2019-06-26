@@ -9,6 +9,9 @@ import { MapaComponent } from './components/mapa/mapa.component';
 
 import { AgmCoreModule } from '@agm/core';
 
+// servicios
+import { MapsService } from './components/servicios/maps.services';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,9 @@ import { AgmCoreModule } from '@agm/core';
       apiKey: 'AIzaSyBbqCZzejEEu6U-vOD4zk8pH9lUf8S42DI'
     })
   ],
-  providers: [],
+  providers: [
+    MapsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
