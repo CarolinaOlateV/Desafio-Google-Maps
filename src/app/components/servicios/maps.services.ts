@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class MapsService {
 
-    private maps:any[] = [
+    public maps:any[] = [
         [
             {
               "Name": "Red Barn Stores 3858-CUAJIMALPA",
