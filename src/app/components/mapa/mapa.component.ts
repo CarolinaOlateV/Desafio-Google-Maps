@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Marcador } from 'src/app/classes/marcador.class';
 import { MapsService } from '../servicios/maps.services';
 
 @Component({
@@ -9,14 +8,12 @@ import { MapsService } from '../servicios/maps.services';
 })
 export class MapaComponent implements OnInit {
 
-  maps:any[] = [];
-  marcadores: Marcador[] = [];
-
   lat = 19.4978;
   lng = -99.1269;
 
-  constructor( private _mapsService:MapsService ) {
-   }
+  public maps:any[] = [];
+
+  constructor( private _mapsService:MapsService ) {}
 
   ngOnInit() {
     this.maps = this._mapsService.getMaps();
