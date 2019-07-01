@@ -19,4 +19,8 @@ export class MapaComponent implements OnInit {
     this.maps = this._mapsService.getMaps();
     console.log( this.maps );
   }
+
+  borrarMarcador( i: number ){
+    this.maps.splice(i, 1);
+  }
 }
